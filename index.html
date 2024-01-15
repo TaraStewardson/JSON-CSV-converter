@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to CSV Converter</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <span>
+        <div class="container" id="visible">
+            <label for="jsonInput">Enter JSON:</label>
+            <br>
+            <textarea id="jsonInput" placeholder='JSON Input here... '></textarea>
+            <br>
+            <button onclick="convertToCSV()">Convert to CSV</button>
+            <br>
+            <br>
+            <label for="csvOutput">CSV Output:</label>
+            <br>
+            <textarea id="csvOutput" readonly></textarea>
+            <br>
+            <button onclick="switchConversion()">Switch to CSV to JSON Converter</button>
+        </div>
+        <div class="container" id="hidden">
+            <label for="csvInput">Enter CSV:</label>
+            <br>
+            <textarea id="csvInput" placeholder='CSV Input here... '></textarea>
+            <br>
+            <button onclick="convertToJSON()">Convert to JSON</button>
+            <br>
+            <br>
+            <label for="jsonOutput">JSON Output:</label>
+            <br>
+            <textarea id="jsonOutput" readonly></textarea>
+            <br>
+            <button onclick="switchConversion()">Switch to JSON to CSV Converter</button>
+        </div>
+    </span>
+    <script src="src/main.js"></script>
+</body>
+</html>
